@@ -9,6 +9,8 @@ public class main {
     	 String b = null;
     	 String c = null; 
     	 String d = null;
+    	 
+    	 //creer un requete suivre les donnees
     	 if (cate != null) {
     		a = "WHERE categorie = '" + cate + "'";
     		compte++;
@@ -41,8 +43,12 @@ public class main {
     		 }
     	 }
     	 ArrayList<Resultat> list = new ArrayList<Resultat>();
-    	 String url = "jdbc:oracle:thin:@localhost:3306:sys";
-    	 Connection cnt = DriverManager.getConnection(url,"root", "panda0509");
+    	 
+    	 //connecter a la BD
+    	 String url = "jdbc:oracle:thin:@localhost:3306:fa4a639w_clients";
+    	 Connection cnt = DriverManager.getConnection(url,"_iamchrs", "XCLHX#HJCfxB");
+    	 
+    	 //executer la requete
     	 PreparedStatement stt = cnt.prepareStatement("SELECT idINDIVIDU, nom, prenom, adresse, telephone, mail FROM INDIVIDU " + a + b + c + d);
     	 ResultSet rs = stt.executeQuery();
     	 while (rs.next()) {
