@@ -1,12 +1,12 @@
 # Fenouil
 Application Fenouil en cours de production pour le cours de GPI par la team "la fine équipe".
 
-Base de données : utiliser MySQL Workbench
+Base de données : 
 - Host : localhost
-- ip : 127.0.0.1
 - port : 3306
-- sid : sys
-- user : root
+- sid : fa4a639w_clients
+- user : _iamchrs
+- pass : XCLHX#HJCfxB
 
 Hébergement : grâce à amen.fr
 https://app.fenouil.online/
