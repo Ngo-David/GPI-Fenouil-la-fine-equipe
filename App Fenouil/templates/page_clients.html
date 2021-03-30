@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+    <form action="insert.php" method="POST" >
+	    <h1 > Saisie d'un client dans la Base de Données Fenouil </h1>
+		
+		<label for="nom">Veuillez entrer le nom du client :</label> 
+		<input type= "text" name= "nom" id="nom" placeholder="Nom..." required><br>
+
+        <label for="prenom">Veuillez entrer le prénom du client :</label>
+		<input type= "text" name= "prenom" id="prenom" placeholder="Prénom..." required><br>
+
+        <label for="dateNaiss">Veuillez entrer la date de naissance du client :</label>
+		<input type= "date" name= "dateNaiss" id="dateNaiss" min="1900-01-01" required><br>
+
+        <label for="adresse">Veuillez entrer son adresse :</label><br>
+		<input type= "text" name= "rue" id="rue" placeholder="Rue..." required>
+		<input type= "text" name= "ville" id="ville" placeholder="Ville..." required>
+		<input type= "text" name= "codePostal" id="CP" placeholder="Code postal..." required><br>
+        <label for="categorie">Veuillez entrer la catégorie socio-professionnelle :</label><br>
+		<input type="radio" id="cadre" name="categorie" value="cadre" required>
+ 		<label for="cadre">Cadre</label><br>
+ 		<input type="radio" id="etudiant" name="categorie" value="etudiant" required>
+  		<label for="etudiant">Etudiant</label><br>
+  		<input type="radio" id="other" name="categorie" value="other" required>
+  		<label for="other">Other</label><br>
+	    <label for="mail">Veuillez entrer le numéro de téléphone :</label>
+		<input type= "number" name= "telephone" id="telephone" placeholder="Téléphone..."><br>
+	    <label for="mail">Veuillez entrer l'e-mail (facultatif) :</label>
+		<input type= "text" name= "mail" id="mail" placeholder="Email..."><br>
+	    <label for="caracteristique">Veuillez renseigner la caractéristique commerciale :</label><br>
+		<input type="radio" id="client" name="caracteristique" value="client" required>
+ 		<label for="client">Client</label><br>
+ 		<input type="radio" id="prospect" name="caracteristique" value="prospect" required>
+  		<label for="prospect">Prospect</label><br>
+  		<input type="radio" id="interdit" name="caracteristique" value="interdit" required>
+  		<label for="interdit">Interdit</label><br>
+		
+
+		<input type="submit" value="Valider"><br>
+    </form>
+    </body>
+	<a href="{{ url_for('pagehome') }}"> retourner à la page d'accueil </a>
+</html>

@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+    <head>
+		<link rel ="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+    </head>
+    <body>
+    <form>
+	    <h1 > Saisie d'un article dans la Base de Données Fenouil </h1>
+        <label for="numero">Veuillez entrer le numéro de l'article :</label>
+		<input type= "number" name= "numero" id="numero" placeholder="Numéro..." required><br>
+        <label for="designation">Veuillez entrer la désignation de l'article :</label>
+		<input type= "text" name= "designation" id="designation" placeholder="Désignation..." required><br>
+        <label for="prix">Veuillez entrer le prix de l'article :</label>
+		<input type= "number" name= "prix" id="prix" placeholder="Prix..." required><br>
+        <input type="submit" value="Valider"><br>
+    </form>
+    </body>
+
+	<a href="{{ url_for('pagehome') }}"> retourner à la page d'accueil </a>
+</html>
