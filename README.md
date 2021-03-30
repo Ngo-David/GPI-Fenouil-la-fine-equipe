@@ -9,7 +9,7 @@ Base de données :
 - pass : XCLHX#HJCfxB
 
 Hébergement : grâce à amen.fr
-https://app.fenouil.online/
+https://fenouil.online/>>>>https://app.fenouil.online/
 
 Technologies retenues:
 - Figma, pour la maquette de l'application
